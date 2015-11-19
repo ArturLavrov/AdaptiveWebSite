@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*Use to fix default boxinng model*/
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -box-sizing:border-box;
+}
+body{
+    font: 100%/1.5em Arial,Helvetica,sans-serif;
+    color:#000;
+}
+#blog-name{
+  font-family: 'Pacifico', cursive;
+  word-spacing: 1em;
+  padding-top: 5em;
+
+}
+/*Flexible media*/
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,{
+    display:block;
+}
+figure{
+  margin: 2em;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+article{
+    margin-top: 2em;
+}
+p{
+  color:grey;
+}
+a:link {
+    text-decoration: none;
+    color:grey;
+}
+
+a:visited {
+    text-decoration: none;
+    color:grey;
+}
+
+a:hover {
+    text-decoration: none;
+    color:grey;
+}
+
+a:active {
+    text-decoration: none;
+    color:grey;
+}
+.post-title{
+    text-align: center;
+    font-family: 'Sumana', serif;
+    font-size:2em;
+}
+
+.article-title{
+  text-align: center;
+}
+.post-content{
+    margin-top: 2em;
+    font-size: 20px;
+}
+.blog-details{
+  text-align: left;
+}
+.tag{
+  font-family: 'Pacifico', cursive;
+}
+footer{
+  border-top:1px groove;
+  padding:30px 0px;
+  text-align:center;
+}
+
+}
+hr{
+  margin-top: 2em;
+}
+hr.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+
+.fluid-bg{
+  position:absolute;
+  top:50%;
+  text-align:center;
+  width:100%;
+  color:#fff;
+  font-size:36px;
+  -ms-transform: translate(0,-50%); /* IE 9 */
+  -webkit-transform: translate(0,-50%); /* Safari */
+   transform: translate(0,-50%);  
+}
+
+/*for small device*/
+@media screen and (max-width: 480px) {
+    #header-wrapper{
+      background-image:url(../Images/mobile.jpg);
+      background-size:cover;
+      webkit-background-size:cover;
+      -moz-background-size:border-box;
+      position:relative;
+      height:100vh;
+    }
+}
+
+/*for other divice*/
+@media screen and (min-width: 45em) {
+    #header-wrapper{
+      background-image:url(https://tookapic.imgix.net/photos/2015/111/8/4/84f12ad0235b32b619c5d93e8f0a0469.jpg?w=770&q=90&s=3a5934e65e7febdb7e8cb700c8867b4a);
+      background-size:cover;
+      webkit-background-size:cover;
+      -moz-background-size:border-box;
+      position:relative;
+      height:100vh;
+    }
+}
+
+
+.container{
+    width: 100%;
+    margin:0 auto;
+    background: white;
+}
+
+#content h2{
+  margin:0px 0px 30px 0px;
+}
+
+.container .cols{
+    float:left;/*For arrangement location of cols */
+    margin:0 0 1em;
+    padding:0 1em;
+    text-align: center;
+}
+/*12 colums Mobile-First Grid System*/
+    .container .cols.col-1, 
+    .container .cols.col-2,
+    .container .cols.col-3, 
+    .container .cols.col-4, 
+    .container .cols.col-5, 
+    .container .cols.col-6, 
+    .container .cols.col-7, 
+    .container .cols.col-8, 
+    .container .cols.col-9, 
+    .container .cols.col-10, 
+    .container .cols.col-11, 
+    .container .cols.col-12 { width: 100%; }
+
+/*ClearFix.We shoud use it to clear ours floats*/
+.container:before,
+.container:after,
+.row:after,
+.row:before,
+.clear:before,
+.clear:after{
+    content:" ";
+    display:table;
+}
+
+.container:after,
+.row:after,
+.clear:after{
+    clear: both;
+}
+
+@media screen and (min-width: 480px) {
+    .container .cols.col-1 { width: 8.333333333333333%; }
+    .container .cols.col-2 { width: 16.66666666666667%; }
+    .container .cols.col-3 { width: 25%; }
+    .container .cols.col-4 { width: 33.333333333333333%;}
+    .container .cols.col-5 { width: 41.66666666666667%; }
+    .container .cols.col-6 { width: 50%; }
+    .container .cols.col-7 { width: 58.33333333333333%; }
+    .container .cols.col-8 { width: 66.66666666666666%; }
+    .container .cols.col-9 { width: 75%; }
+    .container .cols.col-10 { width: 83.333333333333333%; }
+    .container .cols.col-11 { width: 91.66666666666667%; }
+    .container .cols.col-12 { width: 100%; }
+    
+}
