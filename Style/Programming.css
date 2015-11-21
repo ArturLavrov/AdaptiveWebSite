@@ -36,44 +36,29 @@ p{
 }
 a:link {
     text-decoration: none;
-    color:black;
+    color:grey;
 }
 
 a:visited {
     text-decoration: none;
-    color:black;
+    color:grey;
 }
 
 a:hover {
     text-decoration: none;
-    color:black;
+    color:grey;
 }
 
 a:active {
     text-decoration: none;
-    color:black;
+    color:grey;
 }
 .post-title{
     text-align: center;
     font-family: 'Sumana', serif;
     font-size:2em;
 }
-.post-title a:link{
-    text-decoration: none;
-    color:grey;
-}
-.post-title a:visited{
-    text-decoration: none;
-    color:grey;
-}
-.post-title a:hover{
-    text-decoration: none;
-    color:grey;
-}
-.post-title a:active{
-    text-decoration: none;
-    color:grey;
-}
+
 .article-title{
   text-align: center;
 }
@@ -118,7 +103,7 @@ hr.style-two {
 /*for small device*/
 @media screen and (max-width: 480px) {
     #header-wrapper{
-      background-image:url(../Images/mobileV.jpg);
+      background-image:url(../Images/mobileV2.jpg);
       background-size:cover;
       webkit-background-size:cover;
       -moz-background-size:border-box;
@@ -130,7 +115,7 @@ hr.style-two {
 /*for other divice*/
 @media screen and (min-width: 45em) {
     #header-wrapper{
-      background-image:url(https://tookapic.imgix.net/photos/2015/111/8/4/84f12ad0235b32b619c5d93e8f0a0469.jpg?w=770&q=90&s=3a5934e65e7febdb7e8cb700c8867b4a);
+      background-image:url(http://i1-news.softpedia-static.com/images/news2/Keep-Your-Programming-Code-Safe-Obfuscate-It-480832-2.jpg);
       background-size:cover;
       webkit-background-size:cover;
       -moz-background-size:border-box;
